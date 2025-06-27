@@ -1,0 +1,214 @@
+								<!--Luiz Henrique da Silva Cervelati
+									Lucas Sant Ana Brito -->
+<!DOCTYPE html>
+
+	<head>
+		<meta charset="UTF-8">
+	
+		<title>Fatec - Araçatuba</title>
+		
+		<link rel="icon" href="imagens/logofatec.png" type="image/png">
+		
+		<style type = "text/css">
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+	 
+    }
+
+    nav {
+      background-color: #0055a5;
+      padding: 10px;
+      text-align: center;
+	  
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+	.primeira {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;        /* Centraliza horizontalmente o conteúdo */
+	  position: relative;
+	  width: 100%;
+	  height: 200px;
+	  background-color: #003366;
+	  color: white;
+	  font-size: 24px;
+	  padding: 0 20px;
+	  text-align: center;
+	}
+
+	.logo {
+	  width: 200px;
+	  height: auto;
+	  position: absolute;
+	  left: 20px;                     /* Posiciona a logo na esquerda */
+	  top: 50%;
+	  transform: translateY(-50%);    /* Centraliza verticalmente */
+	}
+
+	.texto {
+	  max-width: 600px;
+	  margin: 0 auto;
+	}
+    #segunda {
+	height: 500px;
+      background-color: #666;
+      padding: 20px;
+    }
+
+    #meuFormulario {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .bloco-tematico {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      color: white;
+      height: 300px;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .bloco-tematico::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+
+    .bloco-tematico * {
+      position: relative;
+      z-index: 1;
+    }
+
+    section {
+      padding: 20px;
+      background-color: #fff;
+      margin: 10px;
+      
+    }
+
+    footer {
+      width: 100%;
+      background-color: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    p, a {
+      font-size: 16px;
+    }
+	
+		</style>
+	</head>
+	<body>
+			
+		<div class = "primeira" id = "first">
+			<img src="imagens/logofatec.png" alt="Logo" class="logo">
+			<div class="texto">
+				<h1>CENTRO PAULA SOUZA</h1>
+				<p>Referência no ensino de qualidade no Estado de São Paulo</p>	
+			</div>
+		</div>
+			
+		<br>
+			
+		<nav>
+		<a href="sobrenos.html">Sobre Nós</a>
+		<a href="sobrenos.html">Quem Somos</a>
+		<a href="sobrenos.html">Educação</a>
+		<a href="#contato">Contato</a>
+		<a href="login.html"  style="color: #FFD700;">Login</a>
+		</nav>
+	
+		<br>
+			
+		<div class = "primeira" id = "segunda">
+			
+			<form id="meuFormulario">
+				
+				<div class="bloco-tematico" id = "matematica" style="background-image: url('imagens/Matematica.png');">
+					
+					<h3>Matemática:</h3>
+					<p>Vídeo criado com intuito de instruir e ensinar conceitos importantes na matemática.</p>
+					
+					<video width="250" controls style="display: block; margin: 15px auto 0 auto;">
+						<source src="videos/videouniao.mp4" type="video/mp4">
+							
+					</video>
+				</div>
+					
+					<div class="bloco-tematico" id="administracao" style="background-image: url('imagens/administracao.png');">
+						
+						<h3>Administração:</h3>
+						<p>Desenvolvido para testar seus conhecimentos em Administração, com um conteúdo intuitivo e didático.</p>
+						<a href="https://wordwall.net/pt/resource/91951217" target="_blank" style="color: white;">Acesse a atividade! </a>
+					</div>
+					
+					<div class="bloco-tematico" id="ingles" style="background-image: url('imagens/ingles.png');">
+					<h3>Inglês:</h3>
+						<p>Desenvolvido para testar seus conhecimentos de Administração só que agora em inglês.</p>
+						<a href="https://wordwall.net/pt/resource/91981486" target="_blank"  style="color: white;">Acesse a atividade!</a>
+					</div>
+					
+				</form>
+				 
+			
+			</div>
+			
+			 <section>
+				<section id="contato">
+				  <h2 style="color: #0055a5">Contate-nos</h2>
+				
+				<br>
+				<p><strong style="color: #0055a5;">Telefone:</strong> (11) 3333-4444</p>
+				<br>
+				<p><strong style="color: #0055a5;">Celular:</strong> (11) 91234-5678</p>
+				<br>
+				<p><strong style="color: #0055a5;">Email:</strong> contato@fatecsp.edu.br</p>
+				<br>
+				<p><strong style="color: #0055a5;">Endereço:</strong> Av. Tiradentes, 615 - Luz, São Paulo - SP, 01101-000</p>
+				</section>
+			</section>
+			
+				<footer>
+				<p>&copy; 2025 FATEC São Paulo - Todos os direitos reservados.</p>
+			  </footer>
+		
+	</body>
+
+</html>
